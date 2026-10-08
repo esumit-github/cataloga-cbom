@@ -1,0 +1,106 @@
+{
+  "corpus": "corpus-v1",
+  "description": "CATALOGA ground-truth corpus v1",
+  "assets": [
+    {
+      "bom-ref": "alg-rsa2048-0001",
+      "name": "RSA-2048",
+      "canonicalKey": "sha256:41ccd5d247d9b8d74455749b481b1c9e2b9762dd592a03b305264585f3353e37",
+      "qvClassification": "classical-112",
+      "cryptoProperties": {
+        "assetType": "algorithm"
+      },
+      "present": true
+    },
+    {
+      "bom-ref": "cert-edge1-0002",
+      "name": "TLS Server Cert (edge-1)",
+      "canonicalKey": "sha256:d4b4bef50e1995977311521722bf114dcc3f4d7e47b7340eb44784edb7d36a95",
+      "qvClassification": "classical-112",
+      "cryptoProperties": {
+        "assetType": "certificate"
+      },
+      "present": true
+    },
+    {
+      "bom-ref": "alg-mlkem768-0003",
+      "name": "ML-KEM-768",
+      "canonicalKey": "sha256:9d2cf8427fed3b483309593c88a2d8d6267434ecb8d8f6c2dc371ee0ed36a1b3",
+      "qvClassification": "PQC-ready",
+      "cryptoProperties": {
+        "assetType": "algorithm"
+      },
+      "present": true
+    },
+    {
+      "bom-ref": "alg-x25519mlkem-0004",
+      "name": "X25519MLKEM768",
+      "canonicalKey": "sha256:4db819b671580cd3a8b3ebdc3b0c8d2c74555b9e17009e6586cae5fac3bffc6d",
+      "qvClassification": "hybrid",
+      "cryptoProperties": {
+        "assetType": "algorithm"
+      },
+      "present": true
+    },
+    {
+      "bom-ref": "alg-aes256-0005",
+      "name": "AES-256-GCM",
+      "canonicalKey": "sha256:58e4a86a4973ddd6fc051f4f71fa66914d9de4295c2166b4915921ee6bc88585",
+      "qvClassification": "classical-128+",
+      "cryptoProperties": {
+        "assetType": "algorithm"
+      },
+      "present": true
+    },
+    {
+      "bom-ref": "alg-rsa3072-0101",
+      "name": "RSA-3072",
+      "canonicalKey": "sha256:2c5502d65934b1783f13b7b4669a2620802a3b05aa227035c1fce56eb8e83836",
+      "qvClassification": "classical-128+",
+      "cryptoProperties": {
+        "assetType": "algorithm"
+      },
+      "present": true
+    },
+    {
+      "bom-ref": "cert-web01-0102",
+      "name": "TLS Server Cert (web-01)",
+      "canonicalKey": "sha256:efb2f6755d0a6f81df77961a7c4949bca744d4f5f3f6c0388900b427ffb05f68",
+      "qvClassification": "classical-128+",
+      "cryptoProperties": {
+        "assetType": "certificate"
+      },
+      "present": true
+    },
+    {
+      "bom-ref": "alg-ed25519-0103",
+      "name": "Ed25519",
+      "canonicalKey": "sha256:40a156e62062c0868d1ce1993b7ca63ad61f076a778ebc18a427a90c68913705",
+      "qvClassification": "classical-128+",
+      "cryptoProperties": {
+        "assetType": "algorithm"
+      },
+      "present": true
+    },
+    {
+      "bom-ref": "alg-mldsa65-0104",
+      "name": "ML-DSA-65",
+      "canonicalKey": "sha256:42ab03708fd852e81159b6cdbc34be750fd15066c3a76a9cb46c31744751efa1",
+      "qvClassification": "PQC-ready",
+      "cryptoProperties": {
+        "assetType": "algorithm"
+      },
+      "present": true
+    },
+    {
+      "bom-ref": "alg-aes128-0105",
+      "name": "AES-128-GCM",
+      "canonicalKey": "sha256:ed5c19a538080483e251f40c659afafd323f70e5544fc0844d22e81fdf00c911",
+      "qvClassification": "classical-128+",
+      "cryptoProperties": {
+        "assetType": "algorithm"
+      },
+      "present": true
+    }
+  ]
+}
