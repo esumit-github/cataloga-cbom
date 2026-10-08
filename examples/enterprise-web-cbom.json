@@ -1,0 +1,201 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:64142880-05b2-4b48-b89f-071d2af9efaa",
+  "metadata": {
+    "timestamp": "2026-10-06T07:11:57Z",
+    "tools": [
+      {
+        "name": "cataloga-example-generator",
+        "version": "0.9.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "system-web-farm-1",
+      "name": "Public Web Farm"
+    }
+  },
+  "systemContext": {
+    "systemClass": "enterprise",
+    "criticality": "medium",
+    "boundary": "dmz",
+    "migrationWindow": "2028-2030"
+  },
+  "components": [
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "alg-rsa3072-0101",
+      "name": "RSA-3072",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "algorithmFamily": "RSA",
+          "algorithm": "RSA",
+          "parameterSetIdentifier": "3072",
+          "securityLevel": 3072
+        },
+        "usage": "TLS-1.2-key-establishment"
+      },
+      "locationProvenance": {
+        "method": "example-corpus",
+        "confidence": 1.0,
+        "timestamp": "2026-10-06T00:00:00Z"
+      },
+      "lifecycleState": "active",
+      "canonicalKey": "sha256:2c5502d65934b1783f13b7b4669a2620802a3b05aa227035c1fce56eb8e83836",
+      "qvClassification": "classical-128+",
+      "_provenance_sources": [
+        {
+          "method": "example-corpus",
+          "confidence": 1.0,
+          "timestamp": "2026-10-06T00:00:00Z"
+        }
+      ],
+      "_duplicate_count": 1
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "cert-web01-0102",
+      "name": "TLS Server Cert (web-01)",
+      "cryptoProperties": {
+        "assetType": "certificate",
+        "algorithmProperties": {
+          "algorithmFamily": "RSA",
+          "algorithm": "RSA",
+          "parameterSetIdentifier": "3072"
+        },
+        "usage": "tls",
+        "certificateProperties": {
+          "issuer": "CN=WebRoot CA",
+          "subject": "CN=web-01",
+          "notValidAfter": "2027-03-01",
+          "renewal": {
+            "mechanism": "ACME",
+            "renewBeforeDays": 30
+          }
+        }
+      },
+      "locationProvenance": {
+        "method": "example-corpus",
+        "confidence": 1.0,
+        "timestamp": "2026-10-06T00:00:00Z"
+      },
+      "lifecycleState": "active",
+      "relationship": {
+        "parent": "system-web-farm-1"
+      },
+      "canonicalKey": "sha256:efb2f6755d0a6f81df77961a7c4949bca744d4f5f3f6c0388900b427ffb05f68",
+      "qvClassification": "classical-128+",
+      "_provenance_sources": [
+        {
+          "method": "example-corpus",
+          "confidence": 1.0,
+          "timestamp": "2026-10-06T00:00:00Z"
+        }
+      ],
+      "_duplicate_count": 1
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "alg-ed25519-0103",
+      "name": "Ed25519",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "algorithmFamily": "EdDSA",
+          "algorithm": "Ed25519",
+          "parameterSetIdentifier": "256",
+          "securityLevel": 256
+        },
+        "usage": "code-signing"
+      },
+      "locationProvenance": {
+        "method": "example-corpus",
+        "confidence": 1.0,
+        "timestamp": "2026-10-06T00:00:00Z"
+      },
+      "lifecycleState": "active",
+      "canonicalKey": "sha256:40a156e62062c0868d1ce1993b7ca63ad61f076a778ebc18a427a90c68913705",
+      "qvClassification": "classical-128+",
+      "_provenance_sources": [
+        {
+          "method": "example-corpus",
+          "confidence": 1.0,
+          "timestamp": "2026-10-06T00:00:00Z"
+        }
+      ],
+      "_duplicate_count": 1
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "alg-mldsa65-0104",
+      "name": "ML-DSA-65",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "algorithmFamily": "PQC",
+          "algorithm": "ML-DSA",
+          "parameterSetIdentifier": "65",
+          "securityLevel": 0
+        },
+        "usage": "signature-pqc-pilot"
+      },
+      "locationProvenance": {
+        "method": "example-corpus",
+        "confidence": 1.0,
+        "timestamp": "2026-10-06T00:00:00Z"
+      },
+      "lifecycleState": "active",
+      "canonicalKey": "sha256:42ab03708fd852e81159b6cdbc34be750fd15066c3a76a9cb46c31744751efa1",
+      "qvClassification": "PQC-ready",
+      "_provenance_sources": [
+        {
+          "method": "example-corpus",
+          "confidence": 1.0,
+          "timestamp": "2026-10-06T00:00:00Z"
+        }
+      ],
+      "_duplicate_count": 1
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "alg-aes128-0105",
+      "name": "AES-128-GCM",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "algorithmFamily": "AES",
+          "algorithm": "AES-128-GCM",
+          "parameterSetIdentifier": "128",
+          "securityLevel": 128
+        },
+        "usage": "record-protection"
+      },
+      "locationProvenance": {
+        "method": "example-corpus",
+        "confidence": 1.0,
+        "timestamp": "2026-10-06T00:00:00Z"
+      },
+      "lifecycleState": "active",
+      "canonicalKey": "sha256:ed5c19a538080483e251f40c659afafd323f70e5544fc0844d22e81fdf00c911",
+      "qvClassification": "classical-128+",
+      "_provenance_sources": [
+        {
+          "method": "example-corpus",
+          "confidence": 1.0,
+          "timestamp": "2026-10-06T00:00:00Z"
+        }
+      ],
+      "_duplicate_count": 1
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "cert-web01-0102",
+      "dependsOn": [
+        "system-web-farm-1"
+      ]
+    }
+  ]
+}
